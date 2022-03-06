@@ -14,14 +14,14 @@
     height: 3px;
     background: $main-color;
     &:hover {
-    background: #7B68EE;
+    background: $second-main-color;
     }
   }
   span.long {
     width: 36px;
     color: $main-color;
     &:hover {
-    background: #7B68EE;
+    background: $second-main-color;
   }
 }
 }

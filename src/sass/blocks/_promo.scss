@@ -28,7 +28,7 @@
           color: $main-color;
         }
         transition: all .6s;
-        color: #7B68EE;
+        color: $second-main-color;
         text-decoration: none;
         cursor: pointer;
       &:nth-child(2n+1) {
