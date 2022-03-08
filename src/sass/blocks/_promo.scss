@@ -6,6 +6,9 @@
   &__title {
     width: 535px;
     margin-top: 10px;
+    span {
+      color: $main-color;
+    }
   }
   &__subtitle {
     padding-left: 10px;
