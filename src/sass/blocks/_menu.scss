@@ -2,8 +2,8 @@
   position: absolute;
   top: 20px;
   right: 30px;
-  display: flex;
   height: 21px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
@@ -78,6 +78,7 @@
     height: 15px;
     border: 1.5px solid #ffffff;
     border-radius: 100%;
+    transition: all .6s;
   }
   &:hover {
     &::before {
@@ -97,11 +98,11 @@
     color: #ffffff;
   }
   &__social {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90px;
-    position: absolute;
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
