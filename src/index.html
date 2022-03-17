@@ -81,19 +81,19 @@
 
         <nav>
             <ul class="menu__list">
-                <li class="menu__link"><a href="#">ABOUT ME
+                <li class="menu__link"><a href="#about">ABOUT ME
                 </a>
             </li>
-                <li class="menu__link"><a href="#">MY EXPERIENCE
+                <li class="menu__link"><a href="#resume">MY EXPERIENCE
                 </a>
             </li>
-                <li class="menu__link"><a href="#">MY SKILLS
+                <li class="menu__link"><a href="#skills">MY SKILLS
                 </a>
             </li>
-                <li class="menu__link"><a href="#">MY WORKS
+                <li class="menu__link"><a href="#portfolio">MY WORKS
                 </a>
             </li>
-                <li class="menu__link"><a href="#">MY CONTACTS
+                <li class="menu__link"><a href="#contacts">MY CONTACTS
                 </a>
             </li>
             </ul>
@@ -122,7 +122,7 @@
     <div class="menu__overlay"></div>
 </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -133,13 +133,13 @@
             <div class="title title_fz16 promo__subtitle">My name's <span>Olga Yavorchuk</span></div>
             <h1 class=" title title_fz48 promo__title"><span> I am a web developer from the city of Grodno</span></h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">The portfolio</a>
-                <a href="#" class="promo__link"> About <span>me</span></a>
+                <a href="#portfolio" class="promo__link btn">The portfolio</a>
+                <a href="#about" class="promo__link"><span>About me</span></a>
             </div>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
@@ -202,7 +202,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Experience</h2>
             <div class="title title_fz36 title__section-subtitle">My professional skills</div>
@@ -251,7 +251,7 @@
         </div>
     </section>
 
-<section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Skills</h2>
             <div class="title title_fz36 title__section-subtitle">My technology stack
@@ -325,7 +325,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Portfolio</h2>
             <div class="title title_fz36 title__section-subtitle">My works</div>
@@ -353,7 +353,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -410,6 +410,10 @@
             </div>
         </div>
     </section>
+
+        <a href="#up" class="pageup">
+            <img class="scroll" src="icons/smooth_scrolling/up.svg" alt="up">
+        </a>
     <script src="js/script.js"></script>
 </body>
 </html>
