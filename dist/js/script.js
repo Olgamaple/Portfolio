@@ -17,33 +17,31 @@ const counters = document.querySelectorAll('.skills__ratings-counter'),
     });
 
 
-// const scrolling = (upSelector) => {
-//     const upElem = document.querySelector(upSelector);
+const scrolling = (upSelector) => {
+    const upElem = document.querySelector(upSelector);
     
-//     window.addEventListener('scroll', () => {
-//         if (document.documentElement.scrollTop > 1600) {
-//             upElem.classList.add('animated', 'fadeIn');
-//             upElem.classList.remove('fadeOut');
-//         } else {
-//             upElem.classList.add('fadeOut');
-//             upElem.classList.remove('fadeIn');
-//         }
-//     });
-// };
-// scrolling('.pageup');
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop > 1600) {
+            upElem.style.display = 'block';
+        } else {
+            upElem.style.display = 'none';
+        }
+    });
+};
+scrolling('.pageup');
 
 
 
     // Pure js scrolling
 
-    const upElem = document.querySelector('.pageup');
-
+    // const upElem = document.querySelector('.pageup');
 
     const element = document.documentElement,
-          body = document.body;
+        upEl = document.querySelector('.pageup'),
+        body = document.body;
 
     const calcScroll = () => {
-        upElem.addEventListener('click', function(event) {
+        upEl.addEventListener('click', function(event) {
             let scrollTop = Math.round(body.scrollTop || element.scrollTop);
 
             if (this.hash !== '') {
